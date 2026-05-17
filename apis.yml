@@ -1,7 +1,7 @@
 aid: siliconflow
 url: https://raw.githubusercontent.com/api-evangelist/siliconflow/refs/heads/main/apis.yml
 name: SiliconFlow
-x-type: company
+kind: company
 description: >-
   SiliconFlow is an AI inference cloud serving a broad catalog of open-source models with
   OpenAI- and Anthropic-compatible APIs. Hosts DeepSeek-R1/V3, Qwen3-Coder, GLM-4.6V, Kimi-K2,
