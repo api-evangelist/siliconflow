@@ -56,6 +56,10 @@ apis:
       - type: APIReference
         url: https://docs.siliconflow.com/en/api-reference/chat-completions/chat-completions
 common:
+  - type: GitHubOrganization
+    url: https://github.com/siliconflow
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/siliconflow
   - type: Website
     url: https://siliconflow.com/
   - type: Documentation
