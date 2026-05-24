@@ -70,6 +70,8 @@ common:
     url: rate-limits/siliconflow-rate-limits.yml
   - type: FinOps
     url: finops/siliconflow-finops.yml
+  - type: LLMsTxt
+    url: https://docs.siliconflow.com/llms.txt
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
