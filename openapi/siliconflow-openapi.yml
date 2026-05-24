@@ -1,0 +1,167 @@
+openapi: 3.1.0
+info:
+  title: SiliconFlow Cloud Platform API
+  description: >-
+    SiliconFlow provides an AI inference cloud with OpenAI- and
+    Anthropic-compatible REST APIs covering chat completions, messages,
+    completions, embeddings, reranking, image generation, video generation,
+    audio (speech, transcription, voice catalogue), models, and user account
+    metadata. All endpoints authenticate with a Bearer API key in the
+    Authorization header.
+  version: v1
+  contact:
+    name: SiliconFlow
+    url: https://docs.siliconflow.com/
+servers:
+  - url: https://api.siliconflow.com/v1
+    description: SiliconFlow inference API
+security:
+  - BearerAuth: []
+paths:
+  /chat/completions:
+    post:
+      summary: Create Chat Completion
+      description: Creates a model response for the given chat conversation. OpenAI compatible.
+      operationId: createChatCompletion
+      tags: [Chat]
+      responses:
+        '200':
+          description: OK
+  /messages:
+    post:
+      summary: Create Message
+      description: Anthropic-compatible messages endpoint for chat-style conversations.
+      operationId: createMessage
+      tags: [Messages]
+      responses:
+        '200':
+          description: OK
+  /completions:
+    post:
+      summary: Create Completion
+      description: Generate text, code, or image completions from a prompt.
+      operationId: createCompletion
+      tags: [Completions]
+      responses:
+        '200':
+          description: OK
+  /embeddings:
+    post:
+      summary: Create Embeddings
+      description: Creates an embedding vector representing the input text.
+      operationId: createEmbeddings
+      tags: [Embeddings]
+      responses:
+        '200':
+          description: OK
+  /rerank:
+    post:
+      summary: Create Rerank Request
+      description: Re-rank a set of documents against a query.
+      operationId: createRerank
+      tags: [Rerank]
+      responses:
+        '200':
+          description: OK
+  /images/generations:
+    post:
+      summary: Create Image
+      description: Generates an image response for the given prompt.
+      operationId: createImage
+      tags: [Images]
+      responses:
+        '200':
+          description: OK
+  /videos/submit:
+    post:
+      summary: Submit Video Generation Job
+      description: Generate a video through the input prompt.
+      operationId: submitVideo
+      tags: [Videos]
+      responses:
+        '200':
+          description: OK
+  /videos/status:
+    get:
+      summary: Get Video Status
+      description: Retrieve the status and result of a previously submitted video job.
+      operationId: getVideoStatus
+      tags: [Videos]
+      responses:
+        '200':
+          description: OK
+  /audio/transcriptions:
+    post:
+      summary: Create Audio Transcription
+      description: Creates an audio transcription from an input audio file.
+      operationId: createTranscription
+      tags: [Audio]
+      responses:
+        '200':
+          description: OK
+  /audio/speech:
+    post:
+      summary: Create Audio Speech
+      description: Generate audio from input text.
+      operationId: createSpeech
+      tags: [Audio]
+      responses:
+        '200':
+          description: OK
+  /audio/voices:
+    get:
+      summary: List User Voices
+      description: Get list of user-defined voice styles.
+      operationId: listVoices
+      tags: [Audio]
+      responses:
+        '200':
+          description: OK
+    post:
+      summary: Upload User Voice
+      description: Upload a user-provided voice style.
+      operationId: createVoice
+      tags: [Audio]
+      responses:
+        '200':
+          description: OK
+  /audio/voices/{id}:
+    parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+    delete:
+      summary: Delete User Voice
+      description: Delete a user-defined voice style.
+      operationId: deleteVoice
+      tags: [Audio]
+      responses:
+        '204':
+          description: No Content
+  /models:
+    get:
+      summary: List Models
+      description: Retrieve models information.
+      operationId: listModels
+      tags: [Models]
+      responses:
+        '200':
+          description: OK
+  /user:
+    get:
+      summary: Get User Info
+      description: Get user information including balance and status.
+      operationId: getUser
+      tags: [User]
+      responses:
+        '200':
+          description: OK
+components:
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: API Key
+      description: Bearer API key, format `Authorization: Bearer <your_api_key>`.
