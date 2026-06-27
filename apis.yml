@@ -49,7 +49,7 @@ apis:
     properties:
       - type: Documentation
         url: https://docs.siliconflow.com/
-      - type: SignUp
+      - type: Signup
         url: https://siliconflow.com/
       - type: Pricing
         url: https://siliconflow.com/
@@ -70,7 +70,7 @@ common:
     url: rate-limits/siliconflow-rate-limits.yml
   - type: FinOps
     url: finops/siliconflow-finops.yml
-  - type: LLMsTxt
+  - type: LlmsText
     url: https://docs.siliconflow.com/llms.txt
 maintainers:
   - FN: Kin Lane
