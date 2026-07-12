@@ -56,6 +56,8 @@ apis:
       - type: APIReference
         url: https://docs.siliconflow.com/en/api-reference/chat-completions/chat-completions
 common:
+  - type: DomainSecurity
+    url: security/siliconflow-domain-security.yml
   - type: GitHubOrganization
     url: https://github.com/siliconflow
   - type: LinkedIn
@@ -72,6 +74,8 @@ common:
     url: finops/siliconflow-finops.yml
   - type: LlmsText
     url: https://docs.siliconflow.com/llms.txt
+  - url: https://siliconflow.com/blog
+    type: Blog
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
