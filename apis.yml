@@ -8,7 +8,19 @@ description: >-
   MiniMax-M1-80k, gpt-oss-120b, Llama 3.3 70B, FLUX 1.1 Pro, Wan2.2 (video), CosyVoice2 and
   Fish-Speech (audio). Surfaces include chat, completions, embeddings, reranking, image,
   video, audio (speech + transcription + voice cloning), files, fine-tuning, and batch.
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/siliconflow.png
 tags:
   - AI
   - LLM
