@@ -1,0 +1,109 @@
+{
+  "item": [
+    {
+      "id": "1c8babfc-6204-43e6-b109-1af81e0d9798",
+      "name": "Completions",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "2ad28e35-94eb-430e-aa30-b288110f8fb6",
+          "name": "Create Completion",
+          "request": {
+            "name": "Create Completion",
+            "description": {
+              "content": "Generate text, code, or image completions from a prompt.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "completions"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "a9f3a7e3-e9aa-42b4-ab70-821339c7272d",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "completions"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.siliconflow.com/v1",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "f54b2ed8-f848-4a8f-866c-0706b2d17f2f",
+    "name": "SiliconFlow Cloud Platform Completions API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "SiliconFlow provides an AI inference cloud with OpenAI- and Anthropic-compatible REST APIs covering chat completions, messages, completions, embeddings, reranking, image generation, video generation, audio (speech, transcription, voice catalogue), models, and user account metadata. All endpoints authenticate with a Bearer API key in the Authorization header.\n\nContact Support:\n Name: SiliconFlow",
+      "type": "text/plain"
+    }
+  }
+}

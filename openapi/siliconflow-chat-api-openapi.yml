@@ -1,0 +1,33 @@
+openapi: 3.2.0
+info:
+  title: SiliconFlow Cloud Platform Chat API
+  description: SiliconFlow provides an AI inference cloud with OpenAI- and Anthropic-compatible REST APIs covering chat completions, messages, completions, embeddings, reranking, image generation, video generation, audio (speech, transcription, voice catalogue), models, and user account metadata. All endpoints authenticate with a Bearer API key in the Authorization header.
+  version: v1
+  contact:
+    name: SiliconFlow
+    url: https://docs.siliconflow.com/
+servers:
+- url: https://api.siliconflow.com/v1
+  description: SiliconFlow inference API
+security:
+- BearerAuth: []
+tags:
+- name: Chat
+paths:
+  /chat/completions:
+    post:
+      summary: Create Chat Completion
+      description: Creates a model response for the given chat conversation. OpenAI compatible.
+      operationId: createChatCompletion
+      tags:
+      - Chat
+      responses:
+        '200':
+          description: OK
+components:
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: API Key
+      description: 'Bearer API key, format `Authorization: Bearer <your_api_key>`.'

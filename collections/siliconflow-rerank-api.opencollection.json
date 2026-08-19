@@ -1,0 +1,35 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "SiliconFlow Cloud Platform Rerank API",
+    "version": "v1"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Rerank",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Create Rerank Request",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.siliconflow.com/v1/rerank"
+          },
+          "docs": "Re-rank a set of documents against a query."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

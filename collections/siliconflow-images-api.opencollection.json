@@ -1,0 +1,35 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "SiliconFlow Cloud Platform Images API",
+    "version": "v1"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Images",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Create Image",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.siliconflow.com/v1/images/generations"
+          },
+          "docs": "Generates an image response for the given prompt."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

@@ -1,0 +1,46 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "SiliconFlow Cloud Platform Videos API",
+    "version": "v1"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Videos",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Submit Video Generation Job",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.siliconflow.com/v1/videos/submit"
+          },
+          "docs": "Generate a video through the input prompt."
+        },
+        {
+          "info": {
+            "name": "Get Video Status",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.siliconflow.com/v1/videos/status"
+          },
+          "docs": "Retrieve the status and result of a previously submitted video job."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

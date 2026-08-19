@@ -1,0 +1,44 @@
+{
+  "provider": "siliconflow",
+  "sources": [
+    "siliconflow-audio-api-openapi.yml",
+    "siliconflow-chat-api-openapi.yml",
+    "siliconflow-completions-api-openapi.yml",
+    "siliconflow-embeddings-api-openapi.yml",
+    "siliconflow-images-api-openapi.yml",
+    "siliconflow-messages-api-openapi.yml",
+    "siliconflow-models-api-openapi.yml",
+    "siliconflow-rerank-api-openapi.yml",
+    "siliconflow-user-api-openapi.yml",
+    "siliconflow-videos-api-openapi.yml"
+  ],
+  "outputs": [
+    "siliconflow-audio-api-openapi.yml",
+    "siliconflow-chat-api-openapi.yml",
+    "siliconflow-completions-api-openapi.yml",
+    "siliconflow-embeddings-api-openapi.yml",
+    "siliconflow-images-api-openapi.yml",
+    "siliconflow-messages-api-openapi.yml",
+    "siliconflow-models-api-openapi.yml",
+    "siliconflow-rerank-api-openapi.yml",
+    "siliconflow-user-api-openapi.yml",
+    "siliconflow-videos-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [
+    "siliconflow-audio-api-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "siliconflow-chat-api-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "siliconflow-completions-api-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "siliconflow-embeddings-api-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "siliconflow-images-api-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "siliconflow-messages-api-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "siliconflow-models-api-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "siliconflow-rerank-api-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "siliconflow-user-api-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "siliconflow-videos-api-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": []
+}

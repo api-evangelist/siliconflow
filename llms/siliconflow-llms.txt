@@ -1,0 +1,67 @@
+# SiliconFlow
+
+> Complete API documentation for SiliconFlow AI models. Quick start guides, SDKs, code examples, and developer resources for seamless integration.
+
+## Docs
+
+- [Product introduction](https://docs.siliconflow.com/en/userguide/introduction.md)
+- [Quick Start](https://docs.siliconflow.com/en/userguide/quickstart.md)
+- [Using with Cursor](https://docs.siliconflow.com/en/userguide/use-docs-with-cursor.md)
+- [Text Generation](https://docs.siliconflow.com/en/userguide/capabilities/text-generation.md)
+- [Vision](https://docs.siliconflow.com/en/userguide/capabilities/vision.md)
+- [Video Generation](https://docs.siliconflow.com/en/userguide/capabilities/video.md)
+- [Image Generation](https://docs.siliconflow.com/en/userguide/capabilities/images.md)
+- [Text-to-speech](https://docs.siliconflow.com/en/userguide/capabilities/text-to-speech.md)
+- [Reasoning](https://docs.siliconflow.com/en/userguide/capabilities/reasoning.md)
+- [JSON Mode](https://docs.siliconflow.com/en/userguide/guides/json-mode.md)
+- [Prefix Completion](https://docs.siliconflow.com/en/userguide/guides/prefix.md)
+- [FIM Completion](https://docs.siliconflow.com/en/userguide/guides/fim.md)
+- [Function Calling](https://docs.siliconflow.com/en/userguide/guides/function-calling.md)
+- [Interleaved Thinking](https://docs.siliconflow.com/en/userguide/guides/interleaved-thinking.md)
+- [Using in Claude Code](https://docs.siliconflow.com/en/usercases/use-siliconcloud-in-ClaudeCode.md): Integrate SiliconFlow's AI models with Claude Code for enhanced development experience
+- [Using in ChatHub](https://docs.siliconflow.com/en/usercases/use-siliconcloud-in-chathub.md)
+- [Using in Chatbox](https://docs.siliconflow.com/en/usercases/use-siliconcloud-in-chatbox.md)
+- [Using in Dify](https://docs.siliconflow.com/en/usercases/use-siliconcloud-in-dify.md): Leverage the advantages of multiple SiliconFlow models and fast speed to quickly implement workflows/Agents in Dify.
+- [Using in Sider](https://docs.siliconflow.com/en/usercases/use-siliconcloud-in-sider.md)
+- [Using in MindSearch](https://docs.siliconflow.com/en/usercases/use-siliconcloud-in-mindsearch.md)
+- [Using in DB-GPT](https://docs.siliconflow.com/en/usercases/use-siliconcloud-in-DB-GPT.md)
+- [Using in Cline](https://docs.siliconflow.com/en/usercases/use-siliconcloud-in-cline.md)
+- [How to use OpenClaw with SiliconFlow APIs](https://docs.siliconflow.com/en/usercases/how-to-use-openclaw-with-siliconflow-apis.md)
+- [How to use OpenCode with SiliconFlow APIs](https://docs.siliconflow.com/en/usercases/how-to-use-opencode-with-siliconflow-apis.md)
+- [How to use SillyTavern with SiliconFlow APIs](https://docs.siliconflow.com/en/usercases/how-to-use-sillytavern-with-siliconflow-apis.md)
+- [How to use Janitor AI with SiliconFlow APIs](https://docs.siliconflow.com/en/usercases/how-to-use-janitor-ai-with-siliconflow-apis.md)
+- [How to use Hermes Agent with SiliconFlow APIs](https://docs.siliconflow.com/en/usercases/how-to-use-hermes-agent-with-siliconflow-apis.md)
+- [How to use Chub AI with SiliconFlow's APIs](https://docs.siliconflow.com/en/usercases/how-to-use-chub-ai-with-siliconflows-apis.md)
+- [How to use Cline with SiliconFlow APIs to Build Your Projects](https://docs.siliconflow.com/en/usercases/how-to-use-cline-with-siliconflow-apis-to-build-your-projects.md)
+- [How to use Roo Code with SiliconFlow APIs ](https://docs.siliconflow.com/en/usercase/how-to-use-roo-code-with-siliconflow-apis.md)
+- [How to use Continue in Vs Code with SiliconFlow APIs](https://docs.siliconflow.com/en/usercases/how-to-use-continue-in-vs-code-with-silicon-flow-apis.md)
+- [How to Deploy an AI Assistant on Discord Using Hermes Agent](https://docs.siliconflow.com/en/usercases/how-to-deploy-an-ai-assistant-on-discord-using-hermes-agent.md)
+- [How to use CC Switch with SiliconFlow APIs](https://docs.siliconflow.com/en/usercases/how-to-use-cc-switch-with-siliconflow-apis.md)
+- [How to Build a Personal Wiki Knowledge Base: Andrej Karpathy's Pattern with SiliconFlow & OpenCode](https://docs.siliconflow.com/en/usercases/how-to-build-a-personal-wiki-knowledge-base-andrej-karpathys-pattern-with-siliconflow-and-opencode.md)
+- [How to use CodeWhale with SiliconFlow: DeepSeek V4 Terminal Coding Agent Setup](https://docs.siliconflow.com/en/usercases/how-to-use-code-whale-with-silicon-flow-deep-seek-v4-terminal-coding-agent-setup.md)
+- [How to use Open Design with SiliconFlow APIs](https://docs.siliconflow.com/en/usercases/how-to-use-open-design-with-siliconflow-apis.md): Use SiliconFlow as the built-in model provider in Open Design — the open-source, agent-native design workspace — to generate prototypes, landing pages, dashboards, decks, and more with 200+ models.
+- [Chat completions](https://docs.siliconflow.com/en/api-reference/chat-completions/chat-completions.md): Creates a model response for the given chat conversation.
+- [messages](https://docs.siliconflow.com/en/api-reference/chat-completions/messages.md): Creates a model response for the given chat conversation.
+- [Create embeddings](https://docs.siliconflow.com/en/api-reference/embeddings/create-embeddings.md): Creates an embedding vector representing the input text.
+- [Create rerank](https://docs.siliconflow.com/en/api-reference/rerank/create-rerank.md): Creates a rerank request.
+- [Create Completion](https://docs.siliconflow.com/en/api-reference/completion/create-completion.md): Query a language, code, or image model.
+- [Create image](https://docs.siliconflow.com/en/api-reference/images/images-generations.md): Creates an image response for the given prompt. The URL for the generated image is valid for one hour. Please make sure to download and store it promptly to avoid any issues due to URL expiration.
+- [Upload reference audio](https://docs.siliconflow.com/en/api-reference/audio/upload-voice.md): Upload user-provided voice style, which can be in base64 encoding or file format. Refer to (https://docs.siliconflow.com/capabilities/text-to-speech#2-2)
+- [Create speech](https://docs.siliconflow.com/en/api-reference/audio/create-speech.md): Generate audio from input text. The data generated by the interface is the binary data of the audio, which requires the user to handle it themselves. Reference:https://docs.siliconflow.com/capabilities/text-to-speech#5
+- [Retrieve reference audio list](https://docs.siliconflow.com/en/api-reference/audio/voice-list.md): Get list of user-defined voice styles
+- [Delete reference audio](https://docs.siliconflow.com/en/api-reference/audio/delete-voice.md): Delete user-defined voice style
+- [Create transcription](https://docs.siliconflow.com/en/api-reference/audio/create-audio-transcriptions.md): Creates an audio transcription.
+- [Create video](https://docs.siliconflow.com/en/api-reference/videos/videos_submit.md): Generate a video through the input prompt. This API returns the user's current request ID. The user needs to poll the status interface to get the specific video link. The generated result is valid for 10 minutes, so please retrieve the video link promptly.
+- [Retrieve video](https://docs.siliconflow.com/en/api-reference/videos/get_videos_status.md): Get the user-generated video. The URL for the generated video is valid for one hour. Please make sure to download and store it promptly to avoid any issues due to URL expiration.
+- [List models](https://docs.siliconflow.com/en/api-reference/models/get-model-list.md): Retrieve models information.
+- [Retrieve user info](https://docs.siliconflow.com/en/api-reference/userinfo/get-user-info.md): Get user information including balance and status
+- [Stream Mode](https://docs.siliconflow.com/en/faqs/stream-mode.md)
+- [Error Handling](https://docs.siliconflow.com/en/faqs/error-code.md)
+- [Other Issues](https://docs.siliconflow.com/en/faqs/misc.md)
+- [Release notes](https://docs.siliconflow.com/en/release-notes/overview.md)
+- [Terms of Use](https://docs.siliconflow.com/en/legals/terms-of-service.md): Update Date: Mar. 31st, 2025
+- [Privacy Policy ](https://docs.siliconflow.com/en/legals/privacy-policy.md): Update Date: Mar. 31st, 2025
+
+## OpenAPI Specs
+
+- [openapi](https://docs.siliconflow.com/api-reference/openapi.json)

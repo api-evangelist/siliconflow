@@ -1,0 +1,86 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "SiliconFlow Cloud Platform Audio API",
+    "version": "v1"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Audio",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Create Audio Transcription",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.siliconflow.com/v1/audio/transcriptions"
+          },
+          "docs": "Creates an audio transcription from an input audio file."
+        },
+        {
+          "info": {
+            "name": "Create Audio Speech",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.siliconflow.com/v1/audio/speech"
+          },
+          "docs": "Generate audio from input text."
+        },
+        {
+          "info": {
+            "name": "List User Voices",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.siliconflow.com/v1/audio/voices"
+          },
+          "docs": "Get list of user-defined voice styles."
+        },
+        {
+          "info": {
+            "name": "Upload User Voice",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.siliconflow.com/v1/audio/voices"
+          },
+          "docs": "Upload a user-provided voice style."
+        },
+        {
+          "info": {
+            "name": "Delete User Voice",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api.siliconflow.com/v1/audio/voices/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete a user-defined voice style."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

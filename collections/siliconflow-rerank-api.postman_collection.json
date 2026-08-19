@@ -1,0 +1,109 @@
+{
+  "item": [
+    {
+      "id": "c9d4e6e1-6b9a-4de0-bb6e-80b85b409879",
+      "name": "Rerank",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "985c838f-2486-4913-9288-a688257a5e3c",
+          "name": "Create Rerank Request",
+          "request": {
+            "name": "Create Rerank Request",
+            "description": {
+              "content": "Re-rank a set of documents against a query.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "rerank"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "1b90f28e-d8fd-4beb-891c-54edb622db81",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "rerank"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.siliconflow.com/v1",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "48c5e46f-3bb8-4a8b-a715-80815fabc391",
+    "name": "SiliconFlow Cloud Platform Rerank API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "SiliconFlow provides an AI inference cloud with OpenAI- and Anthropic-compatible REST APIs covering chat completions, messages, completions, embeddings, reranking, image generation, video generation, audio (speech, transcription, voice catalogue), models, and user account metadata. All endpoints authenticate with a Bearer API key in the Authorization header.\n\nContact Support:\n Name: SiliconFlow",
+      "type": "text/plain"
+    }
+  }
+}

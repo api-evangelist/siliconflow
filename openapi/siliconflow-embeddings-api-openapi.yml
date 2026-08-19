@@ -1,0 +1,33 @@
+openapi: 3.2.0
+info:
+  title: SiliconFlow Cloud Platform Embeddings API
+  description: SiliconFlow provides an AI inference cloud with OpenAI- and Anthropic-compatible REST APIs covering chat completions, messages, completions, embeddings, reranking, image generation, video generation, audio (speech, transcription, voice catalogue), models, and user account metadata. All endpoints authenticate with a Bearer API key in the Authorization header.
+  version: v1
+  contact:
+    name: SiliconFlow
+    url: https://docs.siliconflow.com/
+servers:
+- url: https://api.siliconflow.com/v1
+  description: SiliconFlow inference API
+security:
+- BearerAuth: []
+tags:
+- name: Embeddings
+paths:
+  /embeddings:
+    post:
+      summary: Create Embeddings
+      description: Creates an embedding vector representing the input text.
+      operationId: createEmbeddings
+      tags:
+      - Embeddings
+      responses:
+        '200':
+          description: OK
+components:
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: API Key
+      description: 'Bearer API key, format `Authorization: Bearer <your_api_key>`.'

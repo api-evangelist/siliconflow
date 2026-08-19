@@ -1,0 +1,43 @@
+openapi: 3.2.0
+info:
+  title: SiliconFlow Cloud Platform Videos API
+  description: SiliconFlow provides an AI inference cloud with OpenAI- and Anthropic-compatible REST APIs covering chat completions, messages, completions, embeddings, reranking, image generation, video generation, audio (speech, transcription, voice catalogue), models, and user account metadata. All endpoints authenticate with a Bearer API key in the Authorization header.
+  version: v1
+  contact:
+    name: SiliconFlow
+    url: https://docs.siliconflow.com/
+servers:
+- url: https://api.siliconflow.com/v1
+  description: SiliconFlow inference API
+security:
+- BearerAuth: []
+tags:
+- name: Videos
+paths:
+  /videos/submit:
+    post:
+      summary: Submit Video Generation Job
+      description: Generate a video through the input prompt.
+      operationId: submitVideo
+      tags:
+      - Videos
+      responses:
+        '200':
+          description: OK
+  /videos/status:
+    get:
+      summary: Get Video Status
+      description: Retrieve the status and result of a previously submitted video job.
+      operationId: getVideoStatus
+      tags:
+      - Videos
+      responses:
+        '200':
+          description: OK
+components:
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: API Key
+      description: 'Bearer API key, format `Authorization: Bearer <your_api_key>`.'

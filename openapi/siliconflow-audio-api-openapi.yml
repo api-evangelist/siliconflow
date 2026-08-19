@@ -1,0 +1,78 @@
+openapi: 3.2.0
+info:
+  title: SiliconFlow Cloud Platform Audio API
+  description: SiliconFlow provides an AI inference cloud with OpenAI- and Anthropic-compatible REST APIs covering chat completions, messages, completions, embeddings, reranking, image generation, video generation, audio (speech, transcription, voice catalogue), models, and user account metadata. All endpoints authenticate with a Bearer API key in the Authorization header.
+  version: v1
+  contact:
+    name: SiliconFlow
+    url: https://docs.siliconflow.com/
+servers:
+- url: https://api.siliconflow.com/v1
+  description: SiliconFlow inference API
+security:
+- BearerAuth: []
+tags:
+- name: Audio
+paths:
+  /audio/transcriptions:
+    post:
+      summary: Create Audio Transcription
+      description: Creates an audio transcription from an input audio file.
+      operationId: createTranscription
+      tags:
+      - Audio
+      responses:
+        '200':
+          description: OK
+  /audio/speech:
+    post:
+      summary: Create Audio Speech
+      description: Generate audio from input text.
+      operationId: createSpeech
+      tags:
+      - Audio
+      responses:
+        '200':
+          description: OK
+  /audio/voices:
+    get:
+      summary: List User Voices
+      description: Get list of user-defined voice styles.
+      operationId: listVoices
+      tags:
+      - Audio
+      responses:
+        '200':
+          description: OK
+    post:
+      summary: Upload User Voice
+      description: Upload a user-provided voice style.
+      operationId: createVoice
+      tags:
+      - Audio
+      responses:
+        '200':
+          description: OK
+  /audio/voices/{id}:
+    parameters:
+    - name: id
+      in: path
+      required: true
+      schema:
+        type: string
+    delete:
+      summary: Delete User Voice
+      description: Delete a user-defined voice style.
+      operationId: deleteVoice
+      tags:
+      - Audio
+      responses:
+        '204':
+          description: No Content
+components:
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: API Key
+      description: 'Bearer API key, format `Authorization: Bearer <your_api_key>`.'
