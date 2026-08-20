@@ -22,6 +22,16 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/siliconflow.png
 tags:
+  - Artificial Intelligence
+  - LLM
+  - Inference
+  - Open-Source
+  - OpenAI-Compatible
+  - Anthropic Compatible
+  - Image-Generation
+  - Audio
+  - Video
+tags_raw:
   - AI
   - LLM
   - Inference
@@ -45,6 +55,19 @@ apis:
   humanURL: https://docs.siliconflow.com/
   baseURL: https://api.siliconflow.com/v1
   tags:
+  - Artificial Intelligence
+  - LLM
+  - Chat Completions
+  - Message
+  - Embeddings
+  - Reranking
+  - Image-Generation
+  - Video Generation
+  - Audio
+  - File
+  - Fine-Tuning
+  - Batch
+  tags_raw:
   - AI
   - LLM
   - Chat Completions
@@ -112,6 +135,8 @@ apis:
   humanURL: https://docs.siliconflow.com/
   baseURL: https://api.siliconflow.com/v1
   tags:
+  - Image
+  tags_raw:
   - Images
   properties:
   - type: OpenAPI
@@ -122,6 +147,8 @@ apis:
   humanURL: https://docs.siliconflow.com/
   baseURL: https://api.siliconflow.com/v1
   tags:
+  - Message
+  tags_raw:
   - Messages
   properties:
   - type: OpenAPI
