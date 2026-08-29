@@ -8,6 +8,18 @@ description: >-
   MiniMax-M1-80k, gpt-oss-120b, Llama 3.3 70B, FLUX 1.1 Pro, Wan2.2 (video), CosyVoice2 and
   Fish-Speech (audio). Surfaces include chat, completions, embeddings, reranking, image,
   video, audio (speech + transcription + voice cloning), files, fine-tuning, and batch.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: true
+  label: Hosted service · you call their endpoint
+  confidence: high
+  source:
+  - openapi
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
