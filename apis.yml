@@ -201,6 +201,8 @@ apis:
   humanURL: https://docs.siliconflow.com/
   baseURL: https://api.siliconflow.com/v1
   tags:
+  - Video
+  tags_raw:
   - Videos
   properties:
   - type: OpenAPI
