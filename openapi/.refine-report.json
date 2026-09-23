@@ -1,16 +1,7 @@
 {
   "provider": "siliconflow",
   "sources": [
-    "siliconflow-audio-api-openapi.yml",
-    "siliconflow-chat-api-openapi.yml",
-    "siliconflow-completions-api-openapi.yml",
-    "siliconflow-embeddings-api-openapi.yml",
-    "siliconflow-images-api-openapi.yml",
-    "siliconflow-messages-api-openapi.yml",
-    "siliconflow-models-api-openapi.yml",
-    "siliconflow-rerank-api-openapi.yml",
-    "siliconflow-user-api-openapi.yml",
-    "siliconflow-videos-api-openapi.yml"
+    "_original/siliconflow-openapi.yml"
   ],
   "outputs": [
     "siliconflow-audio-api-openapi.yml",
@@ -28,17 +19,30 @@
   "errors": [],
   "warnings": [],
   "notes": [
-    "siliconflow-audio-api-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
-    "siliconflow-chat-api-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
-    "siliconflow-completions-api-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
-    "siliconflow-embeddings-api-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
-    "siliconflow-images-api-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
-    "siliconflow-messages-api-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
-    "siliconflow-models-api-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
-    "siliconflow-rerank-api-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
-    "siliconflow-user-api-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
-    "siliconflow-videos-api-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "siliconflow-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "siliconflow-openapi.yml: declared missing tag: Audio",
+    "siliconflow-openapi.yml: declared missing tag: Chat",
+    "siliconflow-openapi.yml: declared missing tag: Completions",
+    "siliconflow-openapi.yml: declared missing tag: Embeddings",
+    "siliconflow-openapi.yml: declared missing tag: Images",
+    "siliconflow-openapi.yml: declared missing tag: Messages",
+    "siliconflow-openapi.yml: declared missing tag: Models",
+    "siliconflow-openapi.yml: declared missing tag: Rerank",
+    "siliconflow-openapi.yml: declared missing tag: User",
+    "siliconflow-openapi.yml: declared missing tag: Videos",
     "apis.yml register: already-registered"
   ],
-  "skipped": []
+  "skipped": [
+    "siliconflow-audio-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "siliconflow-chat-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "siliconflow-completions-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "siliconflow-embeddings-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "siliconflow-images-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "siliconflow-messages-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "siliconflow-models-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "siliconflow-rerank-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "siliconflow-user-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "siliconflow-videos-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }

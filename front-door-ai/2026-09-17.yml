@@ -1,0 +1,33 @@
+# Front Door AI Index — siliconflow — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: siliconflow
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: siliconflow.com
+  final_host: www.siliconflow.com
+  ownership: own
+  owner: siliconflow
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 32
+  host_score: 32
+  density: 40.82
+  words: 784
+  tiers:
+    agentic: 10
+    core: 17
+    model: 5
+  ambiguous: 2
+  top_terms:
+    AI: 13
+    inference: 7
+    LLMs: 4
+    OpenAI: 3
+    Claude: 2
+    fine-tune: 2
+    agent: 1
+    agentic: 1
+    smart: 1
