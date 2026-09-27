@@ -37,10 +37,10 @@ tags:
   - Artificial Intelligence
   - LLM
   - Inference
-  - Open-Source
+  - Open Source
   - OpenAI-Compatible
   - Anthropic Compatible
-  - Image-Generation
+  - Image Generation
   - Audio
   - Video
 tags_raw:
@@ -53,6 +53,8 @@ tags_raw:
   - Image Generation
   - Audio
   - Video
+  - Open-Source
+  - Image-Generation
 created: '2026-05-08'
 modified: '2026-05-08'
 specificationVersion: '0.23'
@@ -73,7 +75,7 @@ apis:
   - Message
   - Embeddings
   - Reranking
-  - Image-Generation
+  - Image Generation
   - Video Generation
   - Audio
   - File
@@ -92,6 +94,7 @@ apis:
   - Files
   - Fine Tuning
   - Batch
+  - Image-Generation
   properties:
   - type: Documentation
     url: https://docs.siliconflow.com/
