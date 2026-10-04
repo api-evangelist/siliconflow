@@ -114,16 +114,6 @@ apis:
   properties:
   - type: OpenAPI
     url: openapi/siliconflow-audio-api-openapi.yml
-- aid: siliconflow:siliconflow-chat-api
-  name: SiliconFlow Chat API
-  description: The Chat API from SiliconFlow — 1 operation(s) for chat.
-  humanURL: https://docs.siliconflow.com/
-  baseURL: https://api.siliconflow.com/v1
-  tags:
-  - Chat
-  properties:
-  - type: OpenAPI
-    url: openapi/siliconflow-chat-api-openapi.yml
 - aid: siliconflow:siliconflow-completions-api
   name: SiliconFlow Completions API
   description: The Completions API from SiliconFlow — 1 operation(s) for completions.
@@ -210,6 +200,16 @@ apis:
   properties:
   - type: OpenAPI
     url: openapi/siliconflow-videos-api-openapi.yml
+- aid: siliconflow:siliconflow-chat-completions-api
+  name: SiliconFlow Chat Completions API
+  description: The Chat Completions API from SiliconFlow — 1 operation(s) for chat completions.
+  humanURL: https://docs.siliconflow.com/
+  baseURL: https://api.siliconflow.com/v1
+  tags:
+  - Chat Completions
+  properties:
+  - type: OpenAPI
+    url: openapi/siliconflow-chat-completions-api-openapi.yml
 common:
   - type: DomainSecurity
     url: security/siliconflow-domain-security.yml
