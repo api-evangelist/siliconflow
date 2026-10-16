@@ -42,7 +42,7 @@
     note: 'siliconflow declares OpenAI compatibility: ''description: Creates a model response for the given chat
       conversation. OpenAI compatible.'''
     detected_by: sweep-model-routing.py
-    detected: '2026-10-13'
+    detected: '2026-10-15'
   status: not-a-workflow
   arazzo: null
 - slug: siliconflow-llamaindex
