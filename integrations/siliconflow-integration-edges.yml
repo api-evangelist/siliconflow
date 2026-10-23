@@ -78,9 +78,41 @@ edges:
     detected: '2026-10-19'
   detected_by: sweep-model-routing.py
   first_seen: '2026-10-13'
+- partner_name: Hugging Face (hugging-face-hub)
+  partner: hugging-face
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: hugging-face-hub
+  evidence: https://huggingface.co/siliconflow
+  mirror_of: hugging-face/integrations/hugging-face-integration-edges.yml
+  apps:
+  - siliconflow/alexander-llm-wiki-zh-title-to-article
+  - siliconflow/alexander-llm-wiki-zh-to-en
+  - siliconflow/stable-video-diffusion-img2vid-xt-int8
+  - siliconflow/stable-diffusion-v1-5-onediff-deepcache-int8
+  - siliconflow/stable-diffusion-v1-5-onediff-enterprise
+  - siliconflow/stable-diffusion-v2-1-onediff-enterprise
+  - siliconflow/sdxl-base-1.0-onediff-enterprise-v2
+  - siliconflow/stable-video-diffusion-img2vid-xt-deepcache-int8
+  - siliconflow/stable-diffusion-v1-5-onediff-comfy-enterprise-v1
+  - siliconflow/sdxl-base-1.0-onediff-comfy-enterprise-v1
+  - siliconflow/onediff-demo
+  listing_count: 3
+  detected: '2026-10-23'
+  detected_by: mirror-platform-listings.py
+  category: Hugging Face Hub datasets
+  badges:
+  - Verified publisher (Hugging Face verified organisation)
 generated: '2026-10-13'
 method: searched
 checked:
 - https://github.com/Portkey-AI/gateway/tree/main/src/providers
 - https://github.com/run-llama/llama_index/tree/main/llama-index-integrations
 - https://openrouter.ai/api/v1/models
+- hugging-face/integrations/hugging-face-integration-edges.yml
+source:
+- hugging-face/integrations/hugging-face-integration-edges.yml
